@@ -1,0 +1,33 @@
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+<style>
+  div {
+    width: 320px;
+    border: 100px ;
+  }
+  p {
+    margin-bottom: 20px;
+
+  }
+  .align-right {
+    text-align: top;
+    border: 0;
+  }
+</style>
+<div class="card transition">
+  <h2 class="transition"><p style="font-size: 36px; font-family:'Times New Roman', Times, serif" >Fruit Nutrition Analysis</p> 
+    <p p style=" font-family:'Times New Roman', Times, serif">Upload an image of a fruit.</p>
+  </h2>
+  <div class="cta-container transition">
+    <div class="align-right">
+    <form action="/" method="POST" enctype="multipart/form-data">
+      <input type="file" id = "inp" name="pred_img" hidden/>
+      <input type="submit" id = "sub" hidden/>
+      <label for="inp">Select Image</label>
+      <label for="sub">Submit</label>
+    </form>
+    </div>
+  </div>
+  <div class="card_circle transition"></div>
+</div>
+
